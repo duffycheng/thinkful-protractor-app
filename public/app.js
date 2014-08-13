@@ -111,7 +111,7 @@ angular.module("UrlApp", ['ngAnimate', 'ngRoute', 'ngMessages'])
       function ready(data) {
         ctrl.results = data;
         ctrl.loading = true;
-        $location.path('/urls').search({item : url.id});
+        $location.path('/urls').search({item : data.id});
       }
     };
   }])
